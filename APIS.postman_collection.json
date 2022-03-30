@@ -1,0 +1,1363 @@
+{
+	"info": {
+		"_postman_id": "96112fb8-543f-430c-b27c-42694a920051",
+		"name": "APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"admin\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\",\r\n    \"role\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/people/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"nimra\",\r\n    \"email\":\"nimra@gmail.com\",\r\n    \"password\":\"nimra123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-FzsErezZLOy+bN29wkC0N0GU4dg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:50:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"nimra\",\n    \"email\": \"nimra@gmail.com\"\n}"
+				},
+				{
+					"name": "Admin Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"admin\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-Y665z9ZklmiGgshoFxFE4IiqAPw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:52:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"admin\",\n    \"email\": \"admin@gmail.com\"\n}"
+				},
+				{
+					"name": "Already Registered",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"admin\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13-7swbsLs/WVocNgrgWC8SIi4q67M\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:53:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User Already Exists"
+				}
+			]
+		},
+		{
+			"name": "Log In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin123\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/people/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nimra@gmail.com\",\r\n    \"password\":\"nimra\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-sZR7rc1wDhmjYKiGoqv4WSvX8F4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:57:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "InValid Password"
+				},
+				{
+					"name": "User Don't Exist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nimr1a@gmail.com\",\r\n    \"password\":\"nimra123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-fx06K4Ijj4DOfpQNc+4Ws7rNeTo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:59:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User NOT Exists"
+				},
+				{
+					"name": "Successful LogIn",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nimra@gmail.com\",\r\n    \"password\":\"nimra123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a9-NGZb0L25+CWjarRm0WZsidztmqg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:59:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc"
+				}
+			]
+		},
+		{
+			"name": "View People",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people"
+					]
+				},
+				"description": "Only authorized(login) people can view users"
+			},
+			"response": [
+				{
+					"name": "View People",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"208-pKsej7z2cHsXSCmkn4kolhxxyhg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:01:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6243fd9e9acd485f297a9140\",\n        \"name\": \"nimra\",\n        \"email\": \"nimra@gmail.com\",\n        \"password\": \"$2a$10$LjW.Y05Cx/CmBEgZFpuT2.60JVAkJwKMH4uo0ta/O8fJX9MtMMFsa\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6243fdf49acd485f297a9143\",\n        \"name\": \"haider\",\n        \"email\": \"haider@gmail.com\",\n        \"password\": \"$2a$10$e7BpFMqEKH9CXwFZw8ap3.j4mTNMcrLL80SliQZBfCNSgbjGsb5fO\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6243fe3c9acd485f297a9146\",\n        \"name\": \"admin\",\n        \"email\": \"admin@gmail.com\",\n        \"password\": \"$2a$10$RAMBH28Jcs2gbzl73F9wKON1gtGOfqT/eGqvG.5Xr5YC6AoKN8KxC\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "NoAuth",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8-9aSF36k7sTLFNFVGb2lUFRp7c3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:03:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "No Token"
+				}
+			]
+		},
+		{
+			"name": "View One User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/people/6243fdf49acd485f297a9143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"6243fdf49acd485f297a9143"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View One User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/people/6243fdf49acd485f297a9143",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fdf49acd485f297a9143"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ad-yvMppce9ytJ9toFAVK6QX7P47SI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:04:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fdf49acd485f297a9143\",\n    \"name\": \"haider\",\n    \"email\": \"haider@gmail.com\",\n    \"password\": \"$2a$10$e7BpFMqEKH9CXwFZw8ap3.j4mTNMcrLL80SliQZBfCNSgbjGsb5fO\",\n    \"role\": \"user\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hyder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"6243fd9e9acd485f297a9140"
+					]
+				},
+				"description": "only login person can edit"
+			},
+			"response": [
+				{
+					"name": "Updated",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hyder\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fd9e9acd485f297a9140"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ab-ev33a6qvFNduq943ZIb99wQcq7c\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:11:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fd9e9acd485f297a9140\",\n    \"name\": \"hyder\",\n    \"email\": \"nimra@gmail.com\",\n    \"password\": \"$2a$10$LjW.Y05Cx/CmBEgZFpuT2.60JVAkJwKMH4uo0ta/O8fJX9MtMMFsa\",\n    \"role\": \"user\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "notAuth",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoibmltcmEiLCJpYXQiOjE2NDg2MjM1OTN9.RqvrDmr3n1uLRzt4dQF9Ag_-dT7Rgk0x7brBHHAN0Oc",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hyder\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fd9e9acd485f297a9140"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8-9aSF36k7sTLFNFVGb2lUFRp7c3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:12:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "No Token"
+				}
+			]
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoiaHlkZXIiLCJpYXQiOjE2NDg2MjUwODN9.sojIsrz0lxkjWH7FwhmnbiWzhRrkMcgrgDB1SHBKYbc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"6243fd9e9acd485f297a9140"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user trying to delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmQ5ZTlhY2Q0ODVmMjk3YTkxNDAiLCJuYW1lIjoiaHlkZXIiLCJpYXQiOjE2NDg2MjUwODN9.sojIsrz0lxkjWH7FwhmnbiWzhRrkMcgrgDB1SHBKYbc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fd9e9acd485f297a9140"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16-HyNWdPhwOe8J+XGcYpMGn1cDqwA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:28:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Only Admin can Delete!"
+				},
+				{
+					"name": "admin deleted user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmUzYzlhY2Q0ODVmMjk3YTkxNDYiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2NDg2MjU1NDZ9.Muo_8wdgDEujJmMotHVVugXMVhG0cr_GHqRAWEYYZDY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fd9e9acd485f297a9140"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-SbedtVsjXfDaLvi4YFMcsav0EcI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:32:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Person Deleted\"\n}"
+				},
+				{
+					"name": "User Already Deleted/ can not find user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZmUzYzlhY2Q0ODVmMjk3YTkxNDYiLCJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2NDg2MjU1NDZ9.Muo_8wdgDEujJmMotHVVugXMVhG0cr_GHqRAWEYYZDY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/people/6243fd9e9acd485f297a9140",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"6243fd9e9acd485f297a9140"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-0ZE8LDXPfGVyWfcWImB0UQvOoBo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:34:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"messaage\": \"Cannot Find Person\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Send OTP mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"hai@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/people/email-send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"email-send"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "wrong mail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"hai@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/email-send",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"email-send"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-oSzXnrGPZVRlfDWX1RBUFyXhc80\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:37:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusText\": \"Error\",\n    \"message\": \"Wrong Email\"\n}"
+				},
+				{
+					"name": "response sent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"haider@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/email-send",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"email-send"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-nAddVvG+jyDUWpN2XIpb4FM4A30\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:38:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusText\": \"success\",\n    \"message\": \"Check Email\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"haider@gmail.com\",\r\n    \"code\": \"2108\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/people/change-pass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"people",
+						"change-pass"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"haider@gmail.com\",\r\n    \"code\": \"2108\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/change-pass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"change-pass"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-fo1GAkz3pvDSfIw9gA7LXAmAFFg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:40:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusText\": \"Error\",\n    \"message\": \"Invalid OTP\"\n}"
+				},
+				{
+					"name": "Successfully changed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"haider@gmail.com\",\r\n    \"code\": \"9101\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/people/change-pass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"people",
+								"change-pass"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35-gtzPx3WMZ/otn37exPBb5bCH9Zk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 07:40:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusText\": \"Success\",\n    \"message\": \"Password Changed\"\n}"
+				}
+			]
+		}
+	]
+}
